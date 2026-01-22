@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Elisey Kamina — Portfolio
 
-## Getting Started
+Персональный сайт-портфолио Business Process Engineer.  
+Автоматизация процессов, Telegram-инструменты, работа с данными.
 
-First, run the development server:
+🔗 **Live:** [ссылка на сайт]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## О проекте
+
+Минималистичный сайт-портфолио с кейсами по автоматизации бизнес-процессов.  
+Тёмная цветовая схема, адаптивный дизайн, быстрая загрузка.
+
+### Структура
+
+```
+/                   → Hero + навигация
+/#projects          → Избранные работы
+/#about             → О себе
+/#contacts          → Контакты
+/works/bhbot        → Кейс: UNIBOT (автоматизация договоров)
+/works/tg-leads-parser → Кейс: TG Leads Parser
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Технологии
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Категория | Стек |
+|-----------|------|
+| Framework | Next.js 14 (App Router) |
+| Язык | TypeScript |
+| Стили | Tailwind CSS |
+| Шрифты | Geist Sans, Geist Mono |
+| Деплой | Vercel / любой Node.js хостинг |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Локальный запуск
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Клонировать репозиторий
+git clone https://github.com/theeliseykamina/portfolio.git
+cd portfolio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Установить зависимости
+npm install
 
-## Deploy on Vercel
+# Запустить dev-сервер
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Открыть [http://localhost:3000](http://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Сборка для продакшена
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## Структура файлов
+
+```
+├── app/
+│   ├── layout.tsx          # Корневой layout
+│   ├── page.tsx            # Главная страница
+│   ├── globals.css         # Глобальные стили
+│   └── works/
+│       ├── bhbot/
+│       │   └── page.tsx    # Кейс UNIBOT
+│       └── tg-leads-parser/
+│           └── page.tsx    # Кейс TG Parser
+├── public/
+│   ├── me.jpg              # Фото
+│   └── projects/           # Скриншоты проектов
+├── package.json
+└── tailwind.config.ts
+```
+
+---
+
+## Проекты в портфолио
+
+### UNIBOT — Автоматизация договоров аренды
+Telegram-бот для генерации юридических документов через диалог.  
+`Python` `Telegram Bot API` `docxtpl` `Ubuntu` `systemd`
+
+### TG Leads Parser — Парсер лидов из Telegram
+Сбор сообщений из групп ЖК, rule-based скоринг, экспорт кандидатов.  
+`Python` `Telethon` `asyncio` `SQLite` `TSV export`
+
+---
+
+## Контакты
+
+- Telegram: [@longboyrd](https://t.me/longboyrd)
+- Email: elisey-kamina@yandex.ru
+- GitHub: [theeliseykamina](https://github.com/theeliseykamina)
+
+---
+
+## Лицензия
+
+MIT — свободно используйте код как основу для своего портфолио.
