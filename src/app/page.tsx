@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Elisey Kamina — Python Developer",
+  description: "Junior+ Python Developer. Automation & Process Engineering. Telegram-боты, автоматизация документов, сбор данных.",
+};
 
 export default function Home() {
   return (
